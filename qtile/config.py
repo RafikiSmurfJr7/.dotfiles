@@ -33,8 +33,8 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
 mod = "mod4"
-terminal = guess_terminal()
-
+#terminal = guess_terminal()
+terminal = "alacritty"
 colors = {
     "primary":"#232C43",
     "secondary": "#202230",
@@ -102,7 +102,7 @@ keys = [
 
     # open dmenu
 
-     Key([mod], 'r', lazy.spawn("dmenu_run")),
+     Key([mod], 'r', lazy.spawn("rofi -theme 'Paper' -font 'fira-code 14' -show drun -icon-theme 'Papirus' -show-icons")),
 
 ]
 
@@ -120,7 +120,7 @@ for vt in range(1, 8):
     )
 
 
-groups = [Group(i) for i in "12345"]
+groups = [Group(i) for i in "123456"]
 
 
 for i in groups:
