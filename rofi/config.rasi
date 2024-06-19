@@ -1,0 +1,7 @@
+configuration {
+ modi: "drun";
+ font: "fira-code 14";
+ show-icons: true;
+ icon-theme: "Inverse-brown-dark";
+ }
+@theme "squared-everforest"
