@@ -1,5 +1,5 @@
 #!/bin/sh
 exec ~/.config/polybar/launch.sh &
-exec nitrogen --restore &
+exec feh --bg-fill $HOME/wallpapers/current.jpg &
 exec picom -b &
-xfsettingsd --daemon &
+exec xfsettingsd --daemon &
