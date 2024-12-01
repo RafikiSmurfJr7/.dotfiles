@@ -31,6 +31,8 @@ from libqtile import bar, layout, qtile, widget, hook, extension
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
+from libqtile.widget import backlight
+
 
 mod = "mod4"
 #terminal = guess_terminal()
@@ -107,6 +109,8 @@ keys = [
 	Key(["control","mod1"],'l',lazy.spawn("slock")),	
     Key([mod], "e", lazy.spawn("thunar")),
 
+    Key([],"XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 10")),
+    Key([],"XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 10")),
 
 ]
 
