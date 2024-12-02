@@ -32,6 +32,6 @@ WINIT_X11_SCALE_FACTOR = "1"
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/citylights.toml"
+    "./alacritty-theme/themes/catppuccin_mocha.toml"
 ]
 
