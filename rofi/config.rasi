@@ -7,4 +7,5 @@ configuration {
 //@theme "squared-everforest"
 //@theme "/home/rafa/.config/rofi/themes/spotlight-dark.rasi"
 //@theme "/home/rafa/.local/share/rofi/themes/rounded-orange-dark.rasi"
-@theme "/home/rafa/.config/rofi/themes/rounded-gray-dark.rasi"
+//@theme "/home/rafa/.config/rofi/themes/rounded-gray-dark.rasi"
+@theme "/home/rafa/.config/rofi/themes/rounded-nord-dark.rasi"
