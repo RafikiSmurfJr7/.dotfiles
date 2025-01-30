@@ -101,6 +101,7 @@ keys = [
 
 
     Key([mod],'Print', lazy.spawn("xfce4-screenshooter -r")),
+    Key([mod],'F6', lazy.spawn("xfce4-screenshooter -r")),
 
     # open dmenu
 
@@ -113,7 +114,7 @@ keys = [
     Key([],"XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 10")),
     
     Key([mod],"d", lazy.spawn("xfce4-display-settings")),
-
+    #Key([mod],"d", lazy.spawn("nvidia-settings")),
 ]
 
 # Add key bindings to switch VTs in Wayland.
