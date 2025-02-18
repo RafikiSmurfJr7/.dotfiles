@@ -110,9 +110,15 @@ keys = [
 	Key(["control","mod1"],'l',lazy.spawn("slock")),	
     Key([mod], "e", lazy.spawn("thunar")),
 
-    Key([],"XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 10")),
-    Key([],"XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 10")),
+    #Key([],"XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 10")),
+    #Key([],"XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 10")),
+    Key([],"XF86MonBrightnessUp", lazy.spawn("light -A 10")),
+    Key([],"XF86MonBrightnessDown", lazy.spawn("light -U 10")),
     
+    Key([],"XF86AudioRaiseVolume", lazy.spawn("pulsemixer --change-volume +10")),
+    Key([],"XF86AudioLowerVolume", lazy.spawn("pulsemixer --change-volume -10")),
+    Key([],"XF86AudioMute", lazy.spawn("pulsemixer --toggle-mute")),
+
     Key([mod],"d", lazy.spawn("xfce4-display-settings")),
     #Key([mod],"d", lazy.spawn("nvidia-settings")),
 ]
